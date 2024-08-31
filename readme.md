@@ -6,7 +6,7 @@ Welcome to Resume Classification. It's a Language model (BERT) that can correctl
 
 ```bash
 /Resume-Classification
-    /dataset
+    /dataset [Needs to be Downloaded]
         /data/...
         /Resume
             /Resume.csv
@@ -15,8 +15,7 @@ Welcome to Resume Classification. It's a Language model (BERT) that can correctl
         token_length_distribution.jpg
         data_processing_diagram.jpg
         performance.jpg
-    /test_data
-    /train_data
+    /model_final_csv_classifier [Needs to be Downloded or trained]
     config.py
     data_processing.py
     environment.yml

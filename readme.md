@@ -92,9 +92,9 @@ lable_mapping_dir = 'labels_mapping.pkl'
 ```
  After preprocessing it converts the DataFrame into a Huggingface Dataset, split into train-test and finally saves it locally. It also stores a lable_mapping that can be used later to convert the numerical values back into Categories. Finally it tokenize the resumes and create a chart demonstrating the lenght range of the dataset.
 
- ![Demo](.\figures\lables_distribution.jpg)
+ ![Demo](figures/lables_distribution.jpg)
 
- ![Demo](.\figures\token_length_distribution.jpg)
+ ![Demo](figures/token_length_distribution.jpg)
 
  To run this script simply do the following command
 
@@ -110,7 +110,7 @@ After running you'll see and save 2 graphs. Train-test dataset and label_mapping
 
 For Training [BERT](https://huggingface.co/google-bert/bert-base-uncased) is used. It is a Bidirectional Encoder Model developed by Google which is smaller compared to other Language Models and have a good performance. The only disadvantage is the context lenght of BERt is 512. From the above figure we can see most of the resumes have length more than 512. For that reason the input needs to be chnuked before passing to the model.
 
-![Demo](.\figures\data_processing_diagram.jpg)
+![Demo](figures/data_processing_diagram.jpg)
 
 This Chunking and Tokenization is handled by Belt-NLP. You can change the parameters of chunking in 'config.py'
 
@@ -149,7 +149,7 @@ python evaluation.py
 ```
 This script will print accuaracy, recall, precision and F1 score of the given model
 
-![Demo](.\figures\performance.png)
+![Demo](figures/performance.png)
 
 This is the performance of my model after only 3 epoch of training. Due to lack of GPU Resources I have only trained the model for 3 epoch. By Hyper-parameter tuning and increasing the number of epoch this performance can be enhanced greatly. 
 ## Inference / Script

@@ -49,7 +49,7 @@ At first clone this repository using the following command
 
 ```bash
 sudo apt install git-all
-git clone <>
+git clone https://github.com/Hujaifa-Git/Resume-Classification.git
 ```
 
 ### Step 2: Install Conda
